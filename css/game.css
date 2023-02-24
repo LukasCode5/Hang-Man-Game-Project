@@ -1,0 +1,222 @@
+@import 'remainingLives.css';
+@import 'startAndEndScreen.css';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to right, #00aaff, #00ff6c); */
+  background: linear-gradient(to right, #3a54ff, #bf6fff);
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 820px;
+  border-radius: 40px;
+  background: linear-gradient(to right, #7a4ba5, orange, #ffff00);
+  box-shadow: 0px 0px 30px black;
+}
+
+/* .game-container::before {
+  position: absolute;
+  height: 700px;
+  width: 820px;
+  top: -18px;
+  left: -20px;
+  content: '';
+  border-radius: 40px;
+  z-index: -1;
+  background: linear-gradient(to right, #7a4ba5, orange, #ffff00);
+  box-shadow: 0px 0px 30px black;
+} */
+
+.game-container {
+  position: relative;
+  /* display: grid; */
+  display: none;
+  grid-template-columns: 300px repeat(2, 200px);
+  grid-template-rows: 50px repeat(5, 100px) 50px;
+  width: 780px;
+  height: 661px;
+  padding: 40px;
+  /* border: 3px solid black; */
+  border-radius: 40px;
+  background-color: rgb(95, 178, 255);
+}
+
+.word-input-group {
+  display: flex;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 20px;
+  background-color: rgb(161, 209, 255);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.word-input-group form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.word-input-group label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.word-input-group input {
+  font-size: 18px;
+}
+
+.input-element-group {
+  /* position: relative; */
+  display: flex;
+  gap: 3px;
+}
+
+.input-element-group button {
+  /* position: absolute;
+  top: 7%;
+  right: 0; */
+  padding: 3px 5px;
+  border: 2px solid black;
+}
+
+.word-to-guess-letters-list {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 3;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-left: 10px;
+  background-color: #00aaff;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.word-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 30px;
+  /* padding: 10px; */
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: red;
+  transition: 0.3s ease-in-out;
+}
+
+.word-letter p {
+}
+
+.word-guess-keyboard {
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 2;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 100px);
+  margin: 10px 0;
+  padding: 5px;
+  /* border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 166, 0); */
+}
+
+.word-guess-keyboard-letters {
+  grid-column: 1 / span 5;
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(9, minmax(30px, 1fr));
+  margin: 10px 0;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 166, 0);
+}
+
+.word-guess-keyboard-letter {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: snow;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.word-guess-keyboard-letter p {
+}
+
+.selected-letter-to-guess-group {
+  grid-column: 6 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.selected-letter-to-guess {
+  background-color: rgb(131, 253, 131);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.selected-letter-to-guess p {
+  font-size: 40px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+button {
+  background-color: rgb(0, 174, 255);
+  outline: transparent;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.new-game-container {
+  grid-column: 1 / span 3;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-game-container button {
+  font-size: 18px;
+  background-color: darkslateblue;
+}

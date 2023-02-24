@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hang Man Game</title>
+    <link rel="stylesheet" href="./css/game.css" />
+    <script src="./js/hangManTest.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-container">
+        <div class="word-input-group">
+          <form>
+            <label for="word-to-guess">Enter word to guess:</label>
+            <div class="input-element-group">
+              <input data-word-input type="password" />
+              <button data-word-input-element-button type="button">R</button>
+            </div>
+            <button data-word-submit-button type="submit">Submit word</button>
+          </form>
+        </div>
+        <div class="hangman-remaining-lives">
+          <div class="remaining-lives-counter">
+            <p>Lives remaining:<span></span></p>
+          </div>
+          <!-- <div class="first-life lives">
+          <div class="part-one"></div>
+          <div class="part-two"></div>
+          <div class="part-three"></div>
+        </div>
+        <div class="second-life lives"></div>
+        <div class="third-life lives"></div>
+        <div class="fourth-life lives">
+          <div class="part-one"></div>
+          <div class="part-two"></div>
+        </div>
+        <div class="fifth-life lives"></div>
+        <div class="sixth-life lives">
+          <div class="part-one"></div>
+          <div class="part-two"></div>
+          <div class="part-three"></div>
+          <div class="part-four"></div>
+          <div class="part-five"></div>
+        </div>
+        <div class="seventh-life lives">
+          <div class="part-one"></div>
+          <div class="part-two"></div>
+        </div> -->
+        </div>
+        <div class="word-to-guess-letters-list">
+          <!-- <div class="word-letter">
+          <p>L</p>
+        </div> -->
+        </div>
+        <div class="word-guess-keyboard">
+          <div class="word-guess-keyboard-letters">
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>A</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>B</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>C</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>D</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>E</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>F</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>G</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>H</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>I</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>J</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>K</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>L</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>M</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>N</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>O</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>P</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>Q</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>R</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>S</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>T</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>U</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>V</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>W</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>X</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>Y</p></div>
+            <div data-word-guess-keyboard-letter class="word-guess-keyboard-letter"><p>Z</p></div>
+          </div>
+          <div class="selected-letter-to-guess-group">
+            <div data-selected-letter-to-guess class="selected-letter-to-guess">
+              <p></p>
+            </div>
+            <button data-guess-button class="guess">Guess</button>
+          </div>
+        </div>
+
+        <div>
+          <button data-new-game class="new-game">New Game</button>
+        </div>
+      </div>
+      <!-- <div class="game-start-screen">
+        <h1>Hang Man Game</h1>
+
+        <p>Guess the <span>W??D</span></p>
+
+        <button>Play</button>
+      </div> -->
+    </div>
+  </body>
+</html>

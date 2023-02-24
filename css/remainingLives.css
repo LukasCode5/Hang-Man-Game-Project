@@ -1,0 +1,198 @@
+.hangman-remaining-lives {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 3;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: lightcyan;
+}
+
+.remaining-lives-counter {
+  display: none;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.first-life {
+  /* display: none; */
+}
+
+.first-life .part-one {
+  /* display: none; */
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 5px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: red;
+}
+.first-life .part-two {
+  /* display: none; */
+  position: absolute;
+  bottom: 31px;
+  left: 33px;
+  height: 4px;
+  width: 60px;
+  transform: rotateZ(-45deg);
+  background-color: red;
+}
+.first-life .part-three {
+  /* display: none; */
+  position: absolute;
+  bottom: 31px;
+  left: 77px;
+  height: 4px;
+  width: 60px;
+  transform: rotateZ(45deg);
+  background-color: red;
+}
+
+.second-life {
+  /* display: none; */
+  position: absolute;
+  bottom: 71px;
+  left: 25px;
+  height: 5px;
+  width: 120px;
+  transform: rotateZ(90deg);
+  background-color: rgb(0, 255, 179);
+}
+
+.third-life {
+  /* display: none; */
+  position: absolute;
+  top: 105px;
+  left: 25px;
+  height: 5px;
+  width: 120px;
+  transform: rotateZ(90deg);
+  background-color: rgb(25, 0, 255);
+}
+
+.fourth-life {
+  /* display: none; */
+}
+
+.fourth-life .part-one {
+  /* display: none; */
+  position: absolute;
+  top: 45px;
+  left: 83px;
+  height: 3px;
+  width: 120px;
+  background-color: rgb(166, 255, 0);
+}
+.fourth-life .part-two {
+  /* display: none; */
+  position: absolute;
+  top: 73px;
+  left: 74px;
+  height: 5px;
+  width: 80px;
+  transform: rotateZ(-45deg);
+  background-color: rgb(117, 180, 0);
+}
+
+.fifth-life {
+  /* display: none; */
+  position: absolute;
+  top: 66px;
+  left: 181px;
+  height: 4px;
+  width: 40px;
+  transform: rotateZ(90deg);
+  background-color: rgb(150, 0, 180);
+}
+
+.sixth-life {
+  /* display: none; */
+}
+
+.sixth-life .part-one {
+  /* display: none; */
+  position: absolute;
+  top: 87px;
+  left: 176px;
+  height: 50px;
+  width: 50px;
+  border: 4px solid black;
+  border-radius: 25px;
+  background-color: black;
+}
+
+.sixth-life .part-two {
+  /* display: none; */
+  position: absolute;
+  top: 143px;
+  left: 191px;
+  height: 7px;
+  width: 20px;
+  transform: rotateZ(90deg);
+  background-color: black;
+}
+
+.sixth-life .part-three {
+  /* display: none; */
+  position: absolute;
+  top: 163px;
+  left: 153px;
+  height: 6px;
+  width: 50px;
+  transform: rotateZ(-30deg);
+  border-radius: 10px;
+  background-color: black;
+}
+.sixth-life .part-four {
+  /* display: none; */
+  position: absolute;
+  top: 162px;
+  left: 197px;
+  height: 6px;
+  width: 50px;
+  transform: rotateZ(30deg);
+  border-radius: 10px;
+  background-color: black;
+}
+.sixth-life .part-five {
+  /* display: none; */
+  position: absolute;
+  top: 175px;
+  left: 176px;
+  height: 11px;
+  width: 50px;
+  transform: rotateZ(90deg);
+  background-color: black;
+}
+
+.seventh-life {
+  /* display: none; */
+}
+
+.seventh-life .part-one {
+  /* display: none; */
+  position: absolute;
+  top: 221px;
+  left: 159px;
+  height: 7px;
+  width: 50px;
+  transform: rotateZ(-50deg);
+  border-radius: 10px;
+  background-color: black;
+}
+.seventh-life .part-two {
+  /* display: none; */
+  position: absolute;
+  top: 221px;
+  left: 192px;
+  height: 7px;
+  width: 50px;
+  transform: rotateZ(50deg);
+  border-radius: 10px;
+  background-color: black;
+}

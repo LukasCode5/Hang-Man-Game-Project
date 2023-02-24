@@ -1,0 +1,134 @@
+.game-start-screen {
+  position: relative;
+  display: grid;
+  /* display: none; */
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 780px;
+  height: 661px;
+  border-radius: 40px;
+  /* background-color: rgb(255, 255, 255); */
+  background-image: url('../img/background.png');
+}
+
+.game-success-screen {
+  z-index: 1;
+  position: relative;
+  /* display: grid; */
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 780px;
+  height: 661px;
+  border-radius: 40px;
+  /* background: transparent; */
+  background-color: rgb(8, 255, 0);
+  /* background-image: url('../img/background.png'); */
+}
+
+.game-success-screen::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 40px;
+  background-image: url('../img/background.png');
+  opacity: 50%;
+}
+
+.game-end-screen {
+  z-index: 1;
+  position: relative;
+  /* display: grid; */
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 780px;
+  height: 661px;
+  border-radius: 40px;
+  /* background: transparent; */
+  background-color: red;
+  /* background-image: url('../img/background.png'); */
+}
+
+.game-end-screen::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 40px;
+  background-image: url('../img/background.png');
+  opacity: 50%;
+}
+
+.game-start-screen h1,
+.game-end-screen h1,
+.game-success-screen h1 {
+  grid-row: 1 / span 1;
+  align-self: center;
+  justify-self: center;
+  font-size: 60px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.game-start-screen h1 {
+  background-color: #cde6ff;
+}
+.game-end-screen h1 {
+  background-color: red;
+}
+.game-success-screen h1 {
+  background-color: #00d100;
+}
+
+.game-start-screen p,
+.game-end-screen p,
+.game-success-screen p {
+  grid-row: 2 / span 1;
+  display: inline-block;
+  align-self: center;
+  justify-self: center;
+  font-size: 35px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.game-start-screen p {
+  background-color: #c4c4ff;
+}
+.game-end-screen p {
+  background-color: #e74545;
+}
+.game-success-screen p {
+  background-color: #30ae30;
+}
+
+.game-start-screen span,
+.game-end-screen span,
+.game-success-screen span {
+  letter-spacing: 5px;
+  /* font-size: 40px; */
+  text-decoration: underline;
+}
+
+.game-start-screen button,
+.game-end-screen button,
+.game-success-screen button {
+  display: inline-block;
+  grid-row: 3 / span 1;
+  align-self: center;
+  justify-self: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  background-color: #f9f600;
+}
